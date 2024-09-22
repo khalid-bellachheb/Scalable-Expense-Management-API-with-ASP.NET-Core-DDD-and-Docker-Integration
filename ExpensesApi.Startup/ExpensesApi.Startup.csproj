@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>ce0484e7-d0ff-4c61-9610-a33c14fa3a44</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Middleware\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Expenses.Domain\ExpensesApi.Domain.csproj" />
+    <ProjectReference Include="..\ExpensesApi.Application\ExpensesApi.Application.csproj" />
+    <ProjectReference Include="..\ExpensesApi.Infrastructure\ExpensesApi.Infrastructure.csproj" />
+    <ProjectReference Include="..\ExpensesApi.Presentation\ExpensesApi.Presentation.csproj" />
+  </ItemGroup>
+
+</Project>

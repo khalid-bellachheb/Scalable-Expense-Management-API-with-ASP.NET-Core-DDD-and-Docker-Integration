@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ExpensesApi.Presentation</name>
+    </assembly>
+    <members>
+        <member name="T:ExpensesApi.Presentation.Controllers.ExpensesController">
+            <summary>
+            Expenses controller 
+            </summary>
+        </member>
+        <member name="M:ExpensesApi.Presentation.Controllers.ExpensesController.GetAllExpenses(System.Threading.CancellationToken)">
+            <summary>
+            Get all the expenses 
+            </summary>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExpensesApi.Presentation.Controllers.ExpensesController.CreateExpense(ExpensesApi.Domain.Entities.Expense,System.Threading.CancellationToken)">
+            <summary>
+            Create an expense 
+            </summary>
+            <param name="expense"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExpensesApi.Presentation.Controllers.ExpensesController.GetExpense(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Return an expense by ID
+            </summary>
+            <param name="id">Guid of expense</param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ExpensesApi.Presentation.Controllers.UsersController">
+            <summary>
+            User Controller
+            </summary>
+        </member>
+        <member name="M:ExpensesApi.Presentation.Controllers.UsersController.GetAllUsers(System.Threading.CancellationToken)">
+            <summary>
+            Get all users
+            </summary>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExpensesApi.Presentation.Controllers.UsersController.GetUser(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Get the user by Id
+            </summary>
+            <param name="id"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,113 @@
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# It's better to exclude the NuGet package files as they should be restored using `dotnet restore`
+*.nupkg
+*.nuspec
+# The packages folder can be ignored because of PackageReference
+**/[Pp]ackages/*
+# except build/, which is used as an MSBuild target.
+!**/[Pp]ackages/build/
+# Uncomment if necessary however generally it will be regenerated when needed
+#!**/[Pp]ackages/repositories.config
+
+# MSTest test Results #
+#######################
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# NUNIT #
+#########
+*.VisualState.xml
+TestResult.xml
+nunit-*.xml
+
+# Build results #
+#################
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]ogs/
+[Ll]og/
+[Ll]og[Ll]ogs/
+
+# Roslyn cache directories #
+###########################
+*.ide/
+
+# MSTest test Results #
+#######################
+[Tt]est[Rr]esult*/
+
+# .NET Core #
+#############
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ASP.NET Scaffolding #
+#######################
+wwwroot/
+*ScaffoldingReadMe.txt
+
+# Visual Studio 2015/2017/2019 cache/options directory #
+########################################################
+.vs/
+# Uncomment if you have tasks that create the project's static files in wwwroot
+#!wwwroot/
+
+# Visual Studio 2015/2017/2019 auto-generated files #
+#####################################################
+Generated_Code/ # Added by Windows Forms
+
+# Visual Studio 2015/2017/2019 Backup files #
+#############################################
+_Backup/
+
+# SQL Server files #
+####################
+*.mdf
+*.ldf
+*.ndf
+
+# Business Intelligence projects #
+##################################
+*.rdl.data
+*.bim.layout
+*.bim_*.settings
+
+# Microsoft Fakes #
+###################
+FakesAssemblies/
+
+# Visual Studio Code #
+######################
+.vscode/
+
+# Rider #
+#########
+.idea/
+
+# User-specific files #
+#######################
+*.[Pp]ublish.xml
+*.pubxml
+UserSecrets/
+*.user
+*.suo
+
+# Web publish #
+###############
+*.PublishSettings

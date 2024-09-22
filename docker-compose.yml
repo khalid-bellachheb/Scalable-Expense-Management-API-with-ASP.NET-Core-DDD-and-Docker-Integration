@@ -1,0 +1,22 @@
+services:
+  expensesapi.startup:
+    image: ${DOCKER_REGISTRY-}expenses_api_startup
+    container_name: expenses_api_startup
+    build:
+      context: .
+      dockerfile: ExpensesApi.Startup/Dockerfile
+    ports:
+       - "8000:8000"
+       - "8001:8001"
+  expensesapi.database:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: expenses_api_db
+    environment:
+        - MSSQL_SA_PASSWORD=ExpenesesApi0123!
+        - ACCEPT_EULA=Y
+    volumes:
+        - ./.containers/mssql_data:/var/opt/mssql/data
+    ports: 
+        - "1433:1433"
+    
+  
