@@ -6,6 +6,12 @@
 
 The Expenses Management API is a backend service built using ASP.NET Core (.NET 8) to manage user expenses. It supports CRUD (Create, Retrieve, Update, Delete) operations for expenses and is structured using Domain-Driven Design (DDD). The project utilizes Entity Framework Core with SQL Server for data storage and is containerized using Docker for ease of development and deployment.
 
+### Domain-Driven Design (DDD)
+![Domain-Driven Design](Images/DDD.png)
+
+### Project Architecture
+![Project Architecture](Images/Project-architecture.png)
+
 **Features**
 ------------
 
