@@ -1,42 +1,70 @@
-# Expenses API
+**Expenses Management API**
+===========================
 
-## Project Overview
+**Project Overview**
+--------------------
 
-Expenses API is a .NET 6 Web API designed to manage user expenses. It supports operations for creating, retrieving, updating, and deleting expenses. The API is structured using a Domain-Driven Design (DDD) approach with Entity Framework Core for ORM, configured to run on SQL Server. The solution includes Docker integration for easy development and deployment.
+The Expenses Management API is a backend service built using ASP.NET Core (.NET 8) to manage user expenses. It supports CRUD (Create, Retrieve, Update, Delete) operations for expenses and offers a structure based on Domain-Driven Design (DDD). The project utilizes Entity Framework Core as the Object-Relational Mapper (ORM) with SQL Server for data storage and is fully containerized using Docker to facilitate development and deployment.
 
-## Features
+**Features**
+------------
 
-- CRUD operations for expenses
-- User management
-- Currency conversion (planned feature)
-- Integration with Docker and SQL Server
-- Swagger for API documentation
+* **CRUD Operations**: Create, retrieve, update, and delete expenses.
+* **User Management**: Manage user accounts and access.
+* **Currency Conversion**: (Planned feature) Automatically convert expenses into different currencies.
+* **Integration with Docker**: Simplified setup and deployment through Docker containers.
+* **API Documentation**: Comprehensive API documentation with Swagger UI.
 
-## Technology Stack
+**Technology Stack**
+--------------------
 
-- **.NET 8**: Framework for building the API.
-- **Entity Framework Core**: ORM used for database operations.
-- **SQL Server**: Database for storing all data.
-- **Docker**: Containerization of the API and database.
-- **Swagger**: API documentation and interaction.
+* **.NET 8**: Framework for building the API.
+* **Entity Framework Core**: ORM used for database interactions.
+* **SQL Server**: Database system for data storage.
+* **Docker**: Containerization of the API and database to streamline development.
+* **Swagger**: API documentation and interactive interface for testing endpoints.
 
-## Getting Started
+**Getting Started**
+-------------------
 
-These instructions will get your copy of the project up and running on your local machine for development and testing purposes.
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
-### Prerequisites
+### **Prerequisites**
 
-- .NET 8 SDK
-- Docker Desktop
-- Visual Studio 2022 or later (recommended for full feature support)
-- SQL Server Management Studio (optional, for direct database interaction)
+* **.NET 8 SDK**: Required to build and run the project.
+* **Docker Desktop**: For containerization and running the API in a Docker environment.
+* **Visual Studio 2022 or later**: Recommended for full feature support and seamless development experience.
+* **SQL Server Management Studio (SSMS)**: (Optional) For direct database interaction.
 
-Authors
--------
+**Setup Instructions**
+----------------------
 
-* **Khalid Bellachheb** - _Initial work_ - [Khalid BELLACHHEB](https://github.com/khalid-bellachheb)
+1. **Clone the repository**:
+    
+    ```bash
+    git clone <repository_url>
+    ```
+    
+2. **Navigate to the project directory**:
+    
+    ```bash
+    cd ExpensesAPI
+    ```
+    
+3. **Build and run the Docker containers**:
+    
+    ```bash
+    docker-compose up --build
+    ```
+    
+4. **Access the Swagger documentation**: Open your browser and go to `http://localhost:<port>/swagger` to explore and test the API.
 
-License
--------
+**Authors**
+-----------
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+* **Khalid Bellachheb** - Initial development and implementation.
+
+**License**
+-----------
+
+This project is licensed under the MIT License - see the LICENSE.md file for details.
